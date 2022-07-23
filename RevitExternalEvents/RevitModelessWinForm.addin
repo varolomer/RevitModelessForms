@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>ExternalEventsWinForm</Name>
+		<Assembly>ExternalEventsWinForm.dll</Assembly>
+		<AddInId>0e015cb1-7a70-41ae-a8fa-3681cf5589dd</AddInId>
+		<FullClassName>ExternalEventsWinForm.RevitExternalApp</FullClassName>
+		<VendorId>OV</VendorId>
+		<VendorDescription>OV</VendorDescription>
+	</AddIn>
+</RevitAddIns>

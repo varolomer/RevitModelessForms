@@ -1,0 +1,20 @@
+﻿<Window x:Class="ExternalEventsWPF.ModelessWPF"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExternalEventsWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" SizeToContent="Height" WindowStartupLocation="CenterScreen" Topmost="True">
+    <Grid>
+        <StackPanel Margin="15,15,15,15" Grid.ColumnSpan="2">
+            <Button x:Name="Button1" Margin="0,0,0,10" Content="Count Walls" Height="30" Click="Button1_Click"/>
+            <Button x:Name="Button2" Margin="0,0,0,10" Content="Create Random Walls" Height="30" Click="Button2_Click"/>
+            <Button x:Name="Button3" Margin="0,0,0,10" Content="Batch Walls" Height="30" Click="Button3_Click"/>
+            <Button x:Name="Button4" Margin="0,0,0,10" Content="Debug" Height="30"/>
+            <Button x:Name="ButtonClose" Margin="0,0,0,10" Content="Close Button" Height="30" Click="ButtonClose_Click"/>
+            <ProgressBar x:Name="progressBar" Height="30"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
