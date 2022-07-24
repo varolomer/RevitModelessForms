@@ -69,7 +69,7 @@
     <Content Include="Assets\Github\Banner.png" />
     <Content Include="Assets\Github\BatchWalls.gif" />
     <Content Include="Assets\Github\CreateRandomWall.gif" />
-    <Resource Include="Assets\iconModelessWinForm.png" />
+    <Resource Include="Assets\iconModelessForm.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Github\Banner.psd" />
