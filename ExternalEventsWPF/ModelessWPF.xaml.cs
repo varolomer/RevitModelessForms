@@ -30,7 +30,6 @@ namespace ExternalEventsWPF
 
             m_ExEvent = exEvent;
             m_Handler = handler;
-
         }
 
         private void MakeRequest(RevitRequestId requestId)
@@ -52,6 +51,11 @@ namespace ExternalEventsWPF
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
             MakeRequest(RevitRequestId.BatchWalls);
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            MakeRequest(RevitRequestId.ExportImage);
         }
 
         private void ButtonClose_Click(object sender, RoutedEventArgs e)

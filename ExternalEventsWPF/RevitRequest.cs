@@ -54,5 +54,6 @@ namespace ExternalEventsWPF
         CountWalls = 1,
         CreateRandomWall = 2,
         BatchWalls = 3,
+        ExportImage = 4,
     }
 }

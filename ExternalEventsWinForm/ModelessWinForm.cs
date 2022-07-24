@@ -64,6 +64,11 @@ namespace ExternalEventsWinForm
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MakeRequest(RevitRequestId.ExportImage);
+        }
+
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();

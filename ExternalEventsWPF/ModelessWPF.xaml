@@ -11,7 +11,7 @@
             <Button x:Name="Button1" Margin="0,0,0,10" Content="Count Walls" Height="30" Click="Button1_Click"/>
             <Button x:Name="Button2" Margin="0,0,0,10" Content="Create Random Walls" Height="30" Click="Button2_Click"/>
             <Button x:Name="Button3" Margin="0,0,0,10" Content="Batch Walls" Height="30" Click="Button3_Click"/>
-            <Button x:Name="Button4" Margin="0,0,0,10" Content="Debug" Height="30"/>
+            <Button x:Name="Button4" Margin="0,0,0,10" Content="Export Image" Height="30" Click="Button4_Click"/>
             <Button x:Name="ButtonClose" Margin="0,0,0,10" Content="Close Button" Height="30" Click="ButtonClose_Click"/>
             <ProgressBar x:Name="progressBar" Height="30"/>
 

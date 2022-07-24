@@ -45,6 +45,11 @@ namespace ExternalEventsWPF
                         Commands.BatchWalls(uiapp);
                         break;
                     }
+                case RevitRequestId.ExportImage:
+                    {
+                        Commands.ExportImage(uiapp);
+                        break;
+                    }
                 default:
                     {
                         break;

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.DB;
+using System.IO;
 
 namespace ExternalEventsWPF
 {
@@ -111,6 +112,23 @@ namespace ExternalEventsWPF
                     trans.Commit();
                 }
             }
+        }
+
+        public static void ExportImage(UIApplication uiapp)
+        {
+            //Get document
+            Document doc = uiapp.ActiveUIDocument.Document;
+
+            //Create export options
+            ImageExportOptions ops = new ImageExportOptions();
+            ops.ExportRange = ExportRange.VisibleRegionOfCurrentView;
+            ops.HLRandWFViewsFileType = ImageFileType.PNG;
+            ops.ZoomType = ZoomFitType.FitToPage;
+            ops.PixelSize = 3600;
+            ops.FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.png");
+
+            //Export image
+            doc.ExportImage(ops);
         }
     }
 }
