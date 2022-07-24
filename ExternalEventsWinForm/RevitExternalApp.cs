@@ -40,7 +40,7 @@ namespace ExternalEventsWinForm
             string path = Assembly.GetExecutingAssembly().Location;
 
             PushButtonData buttonModelessWinForm = new PushButtonData("ModelessWinForm", "ModelessWinForm", path, "ExternalEventsWinForm.RevitExternalCommand");
-            BitmapImage iconModelessWinForm = new BitmapImage(new Uri("pack://application:,,,/ExternalEventsWinForm;component/Assets/iconModelessWinForm.png"));
+            BitmapImage iconModelessWinForm = new BitmapImage(new Uri("pack://application:,,,/ExternalEventsWinForm;component/Assets/iconModelessForm.png"));
             PushButton pushButton_ModelessWinForm = panelHelper.AddItem(buttonModelessWinForm) as PushButton;
             pushButton_ModelessWinForm.LargeImage = iconModelessWinForm;
 

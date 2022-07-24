@@ -40,10 +40,10 @@ namespace ExternalEventsWPF
 
             string path = Assembly.GetExecutingAssembly().Location;
 
-            PushButtonData buttonModelessWinForm = new PushButtonData("ModelessWinForm", "ModelessWinForm", path, "ExternalEventsWPF.RevitExternalCommand");
-            BitmapImage iconModelessWinForm = new BitmapImage(new Uri("pack://application:,,,/ExternalEventsWPF;component/Assets/iconModelessForm.png"));
-            PushButton pushButton_ModelessWinForm = panelHelper.AddItem(buttonModelessWinForm) as PushButton;
-            pushButton_ModelessWinForm.LargeImage = iconModelessWinForm;
+            PushButtonData buttonModelessForm = new PushButtonData("ModelessWinForm", "ModelessWinForm", path, "ExternalEventsWPF.RevitExternalCommand");
+            BitmapImage iconModelessForm = new BitmapImage(new Uri("pack://application:,,,/ExternalEventsWPF;component/Assets/iconModelessForm.png"));
+            PushButton pushButton_ModelessWPF = panelHelper.AddItem(buttonModelessForm) as PushButton;
+            pushButton_ModelessWPF.LargeImage = iconModelessForm;
 
             return Result.Succeeded;
 
