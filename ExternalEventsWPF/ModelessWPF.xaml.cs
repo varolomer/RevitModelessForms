@@ -32,6 +32,17 @@ namespace ExternalEventsWPF
             m_Handler = handler;
         }
 
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            //Before the form is closed, everything must be disposed properly
+            m_ExEvent.Dispose();
+            m_ExEvent = null;
+            m_Handler = null;
+
+            //You have to call the base class
+            base.OnClosing(e);
+        }
+
         private void MakeRequest(RevitRequestId requestId)
         {
             m_Handler.RevitRequest.Make(requestId);
